@@ -1,7 +1,15 @@
 const puppeteer = require('puppeteer');
+const {
+  question
+} = require('readline-sync');
 
 // modulo de login
 const login = require('./modules/login.js');
+// modulo de redirecionamento para sorteio
+const goToDraw = require('./modules/goToDraw.js');
+
+// url do sorteio
+const draw_url = question('> informe a url do sorteio: ');
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -13,6 +21,8 @@ const login = require('./modules/login.js');
 
   // fazer o login
   await login(page);
+  // ir para pagina do sorteio
+  await goToDraw(page, draw_url);
 
   // await browser.close();
 })();

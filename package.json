@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^3.1.0"
+    "puppeteer": "^3.1.0",
+    "readline-sync": "^1.4.10"
   }
 }
