@@ -1,6 +1,8 @@
 module.exports = async (page, draw_url) => {
   const navigationPromise = page.waitForNavigation();
 
+  await navigationPromise;
+
   // ir para url do sorteio
   await page.goto(draw_url);
 

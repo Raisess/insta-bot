@@ -3,6 +3,10 @@ const {
   question
 } = require('readline-sync');
 
+const {
+  toComment
+} = require('./credencials.json');
+
 // modulo de login
 const login = require('./modules/login.js');
 // modulo de redirecionamento para sorteio
@@ -26,7 +30,7 @@ const draw_url = question('> informe a url do sorteio: ');
   // ir para pagina do sorteio
   await goToDraw(page, draw_url);
   // começar a comentar
-  await comment(page);
+  await comment(page, toComment);
 
   // await browser.close();
 })();

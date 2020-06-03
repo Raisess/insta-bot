@@ -55,6 +55,6 @@ module.exports = async page => {
   await navigationPromise;
 
   // fechar popup de notificação
-  await page.waitForSelector('button[class="aOOlW   HoLwm "]');
-  await page.click('button[class="aOOlW   HoLwm "]');
+  // await page.waitForSelector('button[class="aOOlW   HoLwm "]');
+  // await page.click('button[class="aOOlW   HoLwm "]');
 }
