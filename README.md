@@ -12,7 +12,8 @@ Abra o arquivo credencials.template.json e coloque suas credenciais do instagram
 {
   "user": "<your-username>",
   "password": "<your-password>",
-  "toComment": "Okokok"
+  "toComment": "Okokok",
+  "delay": "<in-minutes>"
 }
 ```
 

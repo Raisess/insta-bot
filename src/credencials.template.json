@@ -1,5 +1,6 @@
 {
   "user": "<your-username>",
   "password": "<your-password>",
-  "toComment": "Okokok"
+  "toComment": "Okokok",
+  "delay": 10
 }

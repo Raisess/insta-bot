@@ -1,4 +1,4 @@
-module.exports = async (page, comment) => {
+module.exports = async (page, comment, delay) => {
   const navigationPromise = page.waitForNavigation();
 
   let i = 1;
@@ -21,5 +21,5 @@ module.exports = async (page, comment) => {
     await navigationPromise;
 
     i++;
-  }, 10 * 60000);
+  }, parseInt(delay) * 60000);
 }
