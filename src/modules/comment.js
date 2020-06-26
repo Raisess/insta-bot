@@ -1,24 +1,25 @@
 module.exports = async (page, comment) => {
   const navigationPromise = page.waitForNavigation();
 
-  for (let i = 0; i < 30; i++) {
-    console.log(i);
+  let i = 1;
+
+  setInterval(async () => {
+    console.log('comentario:', i);
+
     // clicar no campo de comentario
-    await page.waitForSelector('span[class="_15y0l"]');
-    await page.click('span[class="_15y0l"]');
+    await page.waitForSelector('textarea[class="Ypffh"]');
+    await page.click('textarea[class="Ypffh"]');
 
     // escrever comentario
     console.log('escrevendo...');
     await page.keyboard.type(comment);
 
     // clicar em publicar
-    await page.waitForSelector('button[class="sqdOP yWX7d    y3zKF     "]');
-    await page.click('button[class="sqdOP yWX7d    y3zKF     "]');
+    await page.waitForSelector('button[type="submit"]');
+    await page.click('button[type="submit"]');
 
     await navigationPromise;
 
-    await page.reload({
-      waitUntil: ["networkidle0", "domcontentloaded"]
-    });
-  }
+    i++;
+  }, 20 * 1000);
 }
