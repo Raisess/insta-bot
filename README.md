@@ -36,4 +36,4 @@ Para rodar use o comando:
 npm start
 ```
 
-ou clique duas vezes em **run.bat**.
+ou clique duas vezes em **run.bat**, depois cole link do sorteio no terminal dps que o bot pedir.
