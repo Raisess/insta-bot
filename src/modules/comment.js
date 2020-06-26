@@ -21,5 +21,5 @@ module.exports = async (page, comment) => {
     await navigationPromise;
 
     i++;
-  }, 20 * 1000);
+  }, 10 * 60000);
 }
