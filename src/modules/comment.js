@@ -17,6 +17,8 @@ module.exports = async (page, comment, delay) => {
 
   await navigationPromise;
 
+  console.log('esperando o delay...');
+
   let i = 2;
 
   setInterval(async () => {
@@ -35,6 +37,8 @@ module.exports = async (page, comment, delay) => {
     await page.click('button[type="submit"]');
 
     await navigationPromise;
+
+    console.log('esperando o delay...');
 
     i++;
   }, parseInt(delay) * 60000);
