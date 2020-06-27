@@ -31,7 +31,7 @@ const draw_url = question('> informe a url do sorteio: ');
   // ir para pagina do sorteio
   await goToDraw(page, draw_url);
   // começar a comentar
-  await comment(page, toComment, dely);
+  await comment(page, toComment, delay);
 
   // await browser.close();
 })();
