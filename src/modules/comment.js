@@ -1,5 +1,5 @@
 module.exports = async (page, comment, delay) => {
-  const navigationPromise = page.waitForNavigation();
+  const navigationPromise = page.waitForNavigation({ timeout: parseInt(delay) * 60000 });
 
   console.log('comentario:', 1);
 
