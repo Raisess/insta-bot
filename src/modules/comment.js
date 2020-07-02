@@ -41,5 +41,5 @@ module.exports = async (page, comment, delay) => {
     console.log('esperando o delay...');
 
     i++;
-  }, parseInt(delay) * 60000);
+  }, parseFloat(delay) * 60000);
 }
