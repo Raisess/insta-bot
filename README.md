@@ -6,7 +6,7 @@
 
 ## ⚙ Configurando
 
-Abra o arquivo credencials.template.json e coloque suas credenciais do instagram.
+Abra o arquivo **credencials.template.json** copie tudo, crie um arquivo chamado **credencials.json** e coloque suas credenciais do instagram.
 
 ```json
 {
